@@ -9,10 +9,12 @@ import { ModalController } from '@ionic/angular';
 	styleUrls: ['./cart-modal.page.scss'],
 })
 export class CartModalPage implements OnInit {
-
 	cart: Product[] = [];
 
-	constructor(private cartService: CartService, private modalCtrl: ModalController) { }
+	constructor(
+		private cartService: CartService,
+		private modalCtrl: ModalController
+	) {}
 
 	ngOnInit() {
 		this.cart = this.cartService.getCart();
@@ -38,8 +40,5 @@ export class CartModalPage implements OnInit {
 		this.modalCtrl.dismiss();
 	}
 
-	checkout() {
-		
-	}
-
+	checkout() {}
 }

@@ -9,20 +9,20 @@ export interface Product {
 }
 
 @Injectable({
-	providedIn: 'root'
+	providedIn: 'root',
 })
 export class CartService {
 	data: Product[] = [
 		{ id: 0, name: 'Pizza Salami', price: 8.99, amount: 1 },
 		{ id: 1, name: 'Pizza Classic', price: 5.49, amount: 1 },
 		{ id: 2, name: 'Sliced Bread', price: 4.99, amount: 1 },
-		{ id: 3, name: 'Salad', price: 6.99, amount: 1 }
+		{ id: 3, name: 'Salad', price: 6.99, amount: 1 },
 	];
 
 	private cart = [];
 	private cartItemCount = new BehaviorSubject(0);
 
-	constructor() { }
+	constructor() {}
 
 	getProducts() {
 		return this.data;
