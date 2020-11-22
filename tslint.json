@@ -14,7 +14,7 @@
       "rxjs/Rx"
     ],
     "indent": [
-      true,
+      false,
       "tabs",
       2
     ],

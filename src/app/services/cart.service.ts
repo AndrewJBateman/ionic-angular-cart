@@ -24,38 +24,38 @@ export class CartService {
 
 	constructor() {}
 
-	getProducts() {
+	getProducts(): Product[] {
 		return this.data;
 	}
 
-	getCart() {
+	getCart(): Product[] {
+		console.log('this.cart: ', this.cart);
 		return this.cart;
 	}
 
-	getCartItemCount() {
+	getCartItemCount(): BehaviorSubject<number> {
 		return this.cartItemCount;
 	}
 
-	addProduct(product) {
+	addProduct(product: Product) {
 		let added = false;
-		for (const p of this.cart) {
-			if (p.id === product.id) {
-				p.amount += 1;
+		for (const item of this.cart) {
+			if (item.id === product.id) {
+				item.amount += 1;
 				added = true;
 				break;
 			}
 		}
-		if (!added) {
-			this.cart.push(product);
-		}
-		this.cartItemCount.next(this.cartItemCount.value + 1);
+		!added
+			? this.cart.push(product)
+			: this.cartItemCount.next(this.cartItemCount.value + 1);
 	}
 
-	decreaseProduct(product) {
-		for (const [index, p] of this.cart.entries()) {
-			if (p.id === product.id) {
-				p.amount -= 1;
-				if (p.amount === 0) {
+	decreaseProduct(product: Product) {
+		for (const [index, item] of this.cart.entries()) {
+			if (item.id === product.id) {
+				item.amount -= 1;
+				if (item.amount === 0) {
 					this.cart.splice(index, 1);
 				}
 			}
@@ -63,10 +63,10 @@ export class CartService {
 		this.cartItemCount.next(this.cartItemCount.value - 1);
 	}
 
-	removeProduct(product) {
-		for (const [index, p] of this.cart.entries()) {
-			if (p.id === product.id) {
-				this.cartItemCount.next(this.cartItemCount.value - p.amount);
+	removeProduct(product: Product) {
+		for (const [index, item] of this.cart.entries()) {
+			if (item.id === product.id) {
+				this.cartItemCount.next(this.cartItemCount.value - item.amount);
 				this.cart.splice(index, 1);
 			}
 		}

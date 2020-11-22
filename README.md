@@ -1,6 +1,7 @@
 # :zap: Ionic Angular Cart
 
-* Ionic 5 app to show a shopping cart where the user can select items and see them added to a cart. Items can also be removed and the total price and product quantities will be updated. This is another great tutorial from [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=SYz-tH3XOF8&t=766s).
+* Ionic 5 app to show a shopping cart where the user can select items and see them added to a cart. Items can also be removed and the total price and product quantities will be updated.
+* This is another great tutorial from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below.
 
 ## :page_facing_up: Table of contents
 
@@ -30,13 +31,14 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [rxjs v6](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
 * [animate.css v3](https://github.com/daneden/animate.css/) a library of CSS animations.
 
 ## :floppy_disk: Setup
 
+* Run `npm i` to install dependencies
 * To start the server on _localhost://8100_ type: 'ionic serve'
 * To start the server on a mobile using Ionic devapp and connected via wifi, type: 'ionic serve --devapp'
 * The Ionic DevApp was installed on an Android device from the Google Play app store.
@@ -46,25 +48,24 @@
 * Cart service: function to add a product to the shopping cart.
 
 ```typescript
-addProduct(product) {
-  let added = false;
-  for (const p of this.cart) {
-    if (p.id === product.id) {
-      p.amount += 1;
-      added = true;
-      break;
-    }
-  }
-  if (!added) {
-    this.cart.push(product);
-  }
-  this.cartItemCount.next(this.cartItemCount.value + 1);
+addProduct(product: Product) {
+	let added = false;
+	for (const item of this.cart) {
+		if (item.id === product.id) {
+			item.amount += 1;
+			added = true;
+			break;
+		}
+	}
+	!added
+		? this.cart.push(product)
+		: this.cartItemCount.next(this.cartItemCount.value + 1);
 }
 ```
 
 ## :cool: Features
 
-* Animate.css to animate items.
+* [Animate.css](https://github.com/daneden/animate.css) used to animate items.
 
 ## :clipboard: Status & To-do list
 
@@ -73,7 +74,7 @@ addProduct(product) {
 
 ## :clap: Inspiration
 
-* [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=SYz-tH3XOF8&t=766s).
+* [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
 * [Written version of tutorial from Simon Grimm of Devdactic](https://devdactic.com/shopping-cart-ionic-4/).
 
 ## :envelope: Contact
