@@ -20,23 +20,23 @@ export class CartModalPage implements OnInit {
 		this.cart = this.cartService.getCart();
 	}
 
-	decreaseCartItem(product) {
+	decreaseCartItem(product: Product): void {
 		this.cartService.decreaseProduct(product);
 	}
 
-	increaseCartItem(product) {
+	increaseCartItem(product: Product): void {
 		this.cartService.addProduct(product);
 	}
 
-	removeCartItem(product) {
+	removeCartItem(product: Product): void {
 		this.cartService.removeProduct(product);
 	}
 
-	getTotal() {
+	getTotal(): number {
 		return this.cart.reduce((i, j) => i + j.price * j.amount, 0);
 	}
 
-	close() {
+	close(): void {
 		this.modalCtrl.dismiss();
 	}
 
