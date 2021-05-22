@@ -1,7 +1,14 @@
 # :zap: Ionic Angular Cart
 
-* Ionic 5 app to show a shopping cart where the user can select items and see them added to a cart. Items can also be removed and the total price and product quantities will be updated.
+* Ionic 5 app to show a shopping cart where the user can select items and see them added to a cart.
+* Items can also be removed and the total price and product quantities will be updated.
 * This is another great tutorial from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below.
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-cart?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-cart?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-cart?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-cart?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -31,7 +38,7 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v11](https://angular.io/)
+* [Angular v12](https://angular.io/)
 * [rxjs v6](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
 * [animate.css v3](https://github.com/daneden/animate.css/) a library of CSS animations.
@@ -77,6 +84,10 @@ addProduct(product: Product) {
 * [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
 * [Written version of tutorial from Simon Grimm of Devdactic](https://devdactic.com/shopping-cart-ionic-4/).
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
