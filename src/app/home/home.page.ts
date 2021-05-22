@@ -1,4 +1,4 @@
-import { CartService } from './../services/cart.service';
+import { CartService, Product } from './../services/cart.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { BehaviorSubject } from 'rxjs';
@@ -24,7 +24,8 @@ export class HomePage implements OnInit {
 		this.cartItemCount = this.cartService.getCartItemCount();
 	}
 
-	addToCart(product) {
+	addToCart(product: Product) {
+		console.log(`add ${product.name} to cart`)
 		this.animateCSS('jello');
 		this.cartService.addProduct(product);
 	}
