@@ -28,6 +28,7 @@
 
 * modal used to show shopping cart contents: product quantities can be increased or decreased and total price will be adjusted using a simple reduce function.
 * animate.css used to provide some fun visual effects when items are added to the cart and when the cart modal is activated and dismissed. There are options to control delays, speed of animation etc.
+* `tsconfig.json` modified to add `"skipLibCheck": true,` to get round ionicons incompatibility issue with latest Typescript version. This Ionicons issue will be fixed by Ionic.
 
 ## :camera: Screenshots
 
@@ -38,10 +39,10 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [rxjs v6](https://angular.io/guide/rx-library) reactive programming.
+* [Angular v13](https://angular.io/)
+* [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
-* [animate.css v3](https://github.com/daneden/animate.css/) a library of CSS animations.
+* [animate.css v4](https://github.com/daneden/animate.css/) a library of CSS animations.
 
 ## :floppy_disk: Setup
 
@@ -83,6 +84,7 @@ addProduct(product: Product) {
 
 * [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
 * [Written version of tutorial from Simon Grimm of Devdactic](https://devdactic.com/shopping-cart-ionic-4/).
+* [ionicons errors on typescript >= 4.4.x #1011](https://github.com/ionic-team/ionicons/issues/1011)
 
 ## :file_folder: License
 
