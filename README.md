@@ -1,6 +1,6 @@
 # :zap: Ionic Angular Cart
 
-* Ionic 5 app to show a shopping cart where the user can select items and see them added to a cart.
+* Ionic app to show a shopping cart where the user can select items and see them added to a cart.
 * Items can also be removed and the total price and product quantities will be updated.
 * This is another great tutorial from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
@@ -37,8 +37,8 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Ionic/angular v5](https://ionicframework.com/)
+* [Ionic v6](https://ionicframework.com/)
+* [Ionic/angular v6](https://ionicframework.com/)
 * [Angular v13](https://angular.io/)
 * [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
