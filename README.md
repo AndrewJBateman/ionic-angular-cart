@@ -40,7 +40,7 @@
 
 * [Ionic v6](https://ionicframework.com/)
 * [Ionic/angular v6](https://ionicframework.com/)
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
 * [animate.css v4](https://github.com/daneden/animate.css/) a library of CSS animations.
