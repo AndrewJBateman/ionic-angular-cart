@@ -13,16 +13,17 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Ionic Angular Cart](#zap-ionic-angular-cart)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
-  * [:books: General info](#books-general-info)
-  * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
-  * [:computer: Code Examples](#computer-code-examples)
-  * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
-  * [:clap: Inspiration](#clap-inspiration)
-  * [:envelope: Contact](#envelope-contact)
+	* [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+	* [:books: General info](#books-general-info)
+	* [:camera: Screenshots](#camera-screenshots)
+	* [:signal_strength: Technologies](#signal_strength-technologies)
+	* [:floppy_disk: Setup](#floppy_disk-setup)
+	* [:computer: Code Examples](#computer-code-examples)
+	* [:cool: Features](#cool-features)
+	* [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+	* [:clap: Inspiration](#clap-inspiration)
+	* [:file_folder: License](#file_folder-license)
+	* [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -46,8 +47,8 @@
 
 ## :floppy_disk: Setup
 
-* Run `npm i` to install dependencies
-* To start the server on _localhost://8100_ type: 'ionic serve'
+* `npm i` to install dependencies
+* `ionic serve` to start the server on _localhost://8100_
 * To start the server on a mobile using Ionic devapp and connected via wifi, type: 'ionic serve --devapp'
 * The Ionic DevApp was installed on an Android device from the Google Play app store.
 
