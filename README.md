@@ -85,7 +85,6 @@ addProduct(product: Product) {
 
 * [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
 * [Written version of tutorial from Simon Grimm of Devdactic](https://devdactic.com/shopping-cart-ionic-4/).
-* [ionicons errors on typescript >= 4.4.x #1011](https://github.com/ionic-team/ionicons/issues/1011)
 
 ## :file_folder: License
 
