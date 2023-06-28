@@ -38,8 +38,7 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v6](https://ionicframework.com/)
-* [Ionic/angular v6](https://ionicframework.com/)
+* [Ionic/angular v7](https://ionicframework.com/)
 * [Angular v16](https://angular.io/)
 * [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
@@ -83,8 +82,8 @@ addProduct(product: Product) {
 
 ## :clap: Inspiration
 
-* [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4'](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
-* [Written version of tutorial from Simon Grimm of Devdactic](https://devdactic.com/shopping-cart-ionic-4/).
+* [Simon Grimm of Devdactic, Youtube video 'How to Build a Shopping Cart with Ionic 4' (2019)](https://www.youtube.com/watch?v=ZFfVMBhJzVU).
+* [Written version of tutorial from Simon Grimm of Devdactic (2019)](https://devdactic.com/shopping-cart-ionic-4/).
 
 ## :file_folder: License
 
