@@ -23,4 +23,4 @@ const routes: Routes = [
 	],
 	declarations: [CartModalPage]
 })
-export class CartModalPageModule {}
+export default class CartModalPageModule {}
