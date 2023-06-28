@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Platform } from "@ionic/angular";
+import { SplashScreen } from "@ionic-native/splash-screen/ngx";
+import { StatusBar } from "@ionic-native/status-bar/ngx";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   template: `<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>`
+    <ion-router-outlet />
+  </ion-app>`,
 })
 export class AppComponent {
   constructor(

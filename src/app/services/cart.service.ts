@@ -13,10 +13,10 @@ export interface Product {
 })
 export class CartService {
   data: Product[] = [
-    { id: 0, name: 'Pizza Salami', price: 8.99, amount: 0 },
-    { id: 1, name: 'Pizza Classic', price: 5.49, amount: 0 },
-    { id: 2, name: 'Sliced Bread', price: 4.99, amount: 0 },
-    { id: 3, name: 'Salad', price: 6.99, amount: 0 }
+    { id: 0, name: "Pizza Salami", price: 8.99, amount: 0 },
+    { id: 1, name: "Pizza Classic", price: 5.49, amount: 0 },
+    { id: 2, name: "Sliced Bread", price: 4.99, amount: 0 },
+    { id: 3, name: "Salad", price: 6.99, amount: 0 },
   ];
 
   private cart = [];
@@ -37,7 +37,7 @@ export class CartService {
     return this.cartItemCount;
   }
 
-  addProduct(product: Product) {
+  addProduct(product: Product): void {
     let added = false;
     for (let p of this.cart) {
       if (p.id === product.id) {
@@ -47,14 +47,14 @@ export class CartService {
       }
     }
     if (!added) {
-			product.amount = 1;
-			this.cart.push(product);
-			console.log(`product ${product.name} pushed to cart`);
-		}
-		this.cartItemCount.next(this.cartItemCount.value + 1);
+      product.amount = 1;
+      this.cart.push(product);
+      console.log(`product ${product.name} pushed to cart`);
+    }
+    this.cartItemCount.next(this.cartItemCount.value + 1);
   }
 
-	decreaseProduct(product) {
+  decreaseProduct(product: Product): void {
     for (let [index, p] of this.cart.entries()) {
       if (p.id === product.id) {
         p.amount -= 1;
@@ -66,7 +66,7 @@ export class CartService {
     this.cartItemCount.next(this.cartItemCount.value - 1);
   }
 
-  removeProduct(product) {
+  removeProduct(product: Product): void {
     for (let [index, p] of this.cart.entries()) {
       if (p.id === product.id) {
         this.cartItemCount.next(this.cartItemCount.value - p.amount);
