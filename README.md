@@ -13,16 +13,16 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Ionic Angular Cart](#zap-ionic-angular-cart)
-	* [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+	* [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
 	* [:books: General info](#books-general-info)
 	* [:camera: Screenshots](#camera-screenshots)
-	* [:signal_strength: Technologies](#signal_strength-technologies)
-	* [:floppy_disk: Setup](#floppy_disk-setup)
+	* [:signal\_strength: Technologies](#signal_strength-technologies)
+	* [:floppy\_disk: Setup](#floppy_disk-setup)
 	* [:computer: Code Examples](#computer-code-examples)
 	* [:cool: Features](#cool-features)
-	* [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+	* [:clipboard: Status \& To-do list](#clipboard-status--to-do-list)
 	* [:clap: Inspiration](#clap-inspiration)
-	* [:file_folder: License](#file_folder-license)
+	* [:file\_folder: License](#file_folder-license)
 	* [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -40,7 +40,7 @@
 
 * [Ionic v6](https://ionicframework.com/)
 * [Ionic/angular v6](https://ionicframework.com/)
-* [Angular v15](https://angular.io/)
+* [Angular v16](https://angular.io/)
 * [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
 * [animate.css v4](https://github.com/daneden/animate.css/) a library of CSS animations.
@@ -92,4 +92,4 @@ addProduct(product: Product) {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
