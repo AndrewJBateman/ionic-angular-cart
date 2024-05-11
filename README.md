@@ -29,7 +29,6 @@
 
 * modal used to show shopping cart contents: product quantities can be increased or decreased and total price will be adjusted using a simple reduce function.
 * animate.css used to provide some fun visual effects when items are added to the cart and when the cart modal is activated and dismissed. There are options to control delays, speed of animation etc.
-* `tsconfig.json` modified to add `"skipLibCheck": true,` to get round ionicons incompatibility issue with latest Typescript version. This Ionicons issue will be fixed by Ionic.
 
 ## :camera: Screenshots
 
@@ -38,8 +37,8 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic/angular v7](https://ionicframework.com/)
-* [Angular v16](https://angular.io/)
+* [Ionic/angular v8](https://ionicframework.com/)
+* [Angular v17](https://angular.io/)
 * [rxjs v7](https://angular.io/guide/rx-library) reactive programming.
 * [RxJS Behavior subject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject) to represent the event stream of product cart updates.
 * [animate.css v4](https://github.com/daneden/animate.css/) a library of CSS animations.
@@ -91,4 +90,4 @@ addProduct(product: Product) {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@gmail.com`
